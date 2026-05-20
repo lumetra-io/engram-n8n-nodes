@@ -21,7 +21,7 @@ In your n8n instance:
 
 1. Go to **Settings → Community Nodes**.
 2. Click **Install a community node**.
-3. Enter `n8n-nodes-engram-memory` and confirm.
+3. Enter `@lumetra/n8n-nodes-engram-memory` and confirm.
 4. After install, search for **Engram** in the node panel.
 
 > Community nodes must be enabled on your n8n instance. For self-hosted n8n, set `N8N_COMMUNITY_PACKAGES_ENABLED=true`. n8n Cloud users on supported plans can install community nodes from the UI directly.
@@ -66,7 +66,7 @@ docker run -it --rm \
   docker.n8n.io/n8nio/n8n
 ```
 
-Then **Settings → Community Nodes → Install** and enter `n8n-nodes-engram-memory` (after the package is published to npm), or use `npm link` for an unpublished local build.
+Then **Settings → Community Nodes → Install** and enter `@lumetra/n8n-nodes-engram-memory` (after the package is published to npm), or use `npm link` for an unpublished local build.
 
 ## Privacy
 

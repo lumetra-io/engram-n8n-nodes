@@ -1,5 +1,5 @@
 {
-  "name": "n8n-nodes-engram-memory",
+  "name": "@lumetra/n8n-nodes-engram-memory",
   "version": "0.1.0",
   "description": "n8n community node for Engram by Lumetra \u2014 durable, explainable memory for AI agents.",
   "license": "MIT",
