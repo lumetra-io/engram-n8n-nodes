@@ -1,54 +1,54 @@
 {
-	"name": "n8n-nodes-engram",
-	"version": "0.1.0",
-	"description": "n8n community node for Engram by Lumetra — durable, explainable memory for AI agents.",
-	"license": "MIT",
-	"homepage": "https://lumetra.io",
-	"keywords": [
-		"n8n-community-node-package",
-		"engram",
-		"lumetra",
-		"memory",
-		"ai",
-		"agent-memory",
-		"llm"
-	],
-	"author": {
-		"name": "Lumetra",
-		"email": "support@lumetra.io",
-		"url": "https://lumetra.io"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/lumetra-io/engram-n8n-nodes.git"
-	},
-	"engines": {
-		"node": ">=18.10"
-	},
-	"main": "index.js",
-	"scripts": {
-		"build": "tsc && npm run copy:assets",
-		"copy:assets": "node -e \"const fs=require('fs'),path=require('path');const src='nodes/Engram/engram.svg';const dst='dist/nodes/Engram/engram.svg';fs.mkdirSync(path.dirname(dst),{recursive:true});fs.copyFileSync(src,dst);\"",
-		"dev": "tsc --watch",
-		"prepublishOnly": "npm run build"
-	},
-	"files": [
-		"dist"
-	],
-	"n8n": {
-		"n8nNodesApiVersion": 1,
-		"credentials": [
-			"dist/credentials/EngramApi.credentials.js"
-		],
-		"nodes": [
-			"dist/nodes/Engram/Engram.node.js"
-		]
-	},
-	"devDependencies": {
-		"n8n-workflow": "*",
-		"typescript": "^5.4.0"
-	},
-	"peerDependencies": {
-		"n8n-workflow": "*"
-	}
+  "name": "n8n-nodes-engram-memory",
+  "version": "0.1.0",
+  "description": "n8n community node for Engram by Lumetra \u2014 durable, explainable memory for AI agents.",
+  "license": "MIT",
+  "homepage": "https://lumetra.io",
+  "keywords": [
+    "n8n-community-node-package",
+    "engram",
+    "lumetra",
+    "memory",
+    "ai",
+    "agent-memory",
+    "llm"
+  ],
+  "author": {
+    "name": "Lumetra",
+    "email": "support@lumetra.io",
+    "url": "https://lumetra.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lumetra-io/engram-n8n-nodes.git"
+  },
+  "engines": {
+    "node": ">=18.10"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && npm run copy:assets",
+    "copy:assets": "node -e \"const fs=require('fs'),path=require('path');const src='nodes/Engram/engram.svg';const dst='dist/nodes/Engram/engram.svg';fs.mkdirSync(path.dirname(dst),{recursive:true});fs.copyFileSync(src,dst);\"",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/EngramApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Engram/Engram.node.js"
+    ]
+  },
+  "devDependencies": {
+    "n8n-workflow": "*",
+    "typescript": "^5.4.0"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
 }
