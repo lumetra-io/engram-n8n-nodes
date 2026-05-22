@@ -197,7 +197,7 @@ export class Engram implements INodeType {
 					url = `${baseUrl}/v1/query`;
 					// Engram REST expects "query"; we expose "question" in the UI to match
 					// the other Engram plugins (Dify, Claude, ChatGPT).
-					body = { query: question, bucket };
+					body = { query: question, buckets: [bucket] };
 				} else if (operation === 'listMemories') {
 					const bucket = this.getNodeParameter('bucket', i) as string;
 					const limit = this.getNodeParameter('limit', i) as number;
